@@ -1,0 +1,56 @@
+#container{
+    background-color: plum;
+    border: solid 2px black;
+    height: 700px;
+    width: 500px;
+    margin: 2% 20%;
+    margin-left: 35%;
+    /* could have also used fit-content in height and width but it didn't looked good but if we have to big email adresses it will be useful*/
+}
+#heading{
+    padding: 5px 140px;
+    text-align: center;
+
+}
+#form{
+    padding: 10px 90px;
+}
+hr{
+    border-top:1px solid black;
+}
+
+#submit{
+    height: 30px;
+    width: 120px;
+    margin-left: 90px;
+    background-color: orange;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#name,#mobile,#email{
+    height: 20px;
+    width: 200px;
+    
+}
+table{
+    display: none;
+}
+table,tr,th,td{
+    padding: 10px;
+    
+   
+}
+table{
+    margin-left: 10%;
+}
+td{
+    background-color: gray;
+    margin-right:5px 10px;
+    border: solid 1px black;
+    /*can't add margin in td*/
+}
+th{
+    margin-right: 1%;
+    /*nor in th*/
+}

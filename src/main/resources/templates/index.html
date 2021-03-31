@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+    <head th:replace="layout :: site-head">
+   <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <script type="text/javascript" src="/js/index.js"></script>
+    </head>
+    <header th:replace="layout :: logged-out"></header>
+    <body>
+        <div id="container">
+            <div id ="heading">
+            <span>Details Form</span>
+            <hr>
+            </div>
+            <div id ="form">
+
+                <form method="POST" th:object="${User}" th:action="@{/index}">
+                <label>Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <input type ="Text" id ="name" th:field="${User.Name}"> <br><br>
+                <label>Mob. No:</label>&nbsp;
+                <input type ="number" id="mobile" th:field="${User.Mobile}"> <br><br>
+                <label>Email ID:</label>&nbsp;
+                <input type ="Text" id = "email" th:field="${User.Email}"> <br><br><br>
+                <input type="submit" id ="submit" onclick="submission()">
+                </form>
+         
+        </div>
+            <hr>
+        <div id ="newdiv">
+            <table id ="table">
+                <tbody id="tbody">
+                    <tr>
+                    <th>name</th>
+                    <th>Mobile no.</th>
+                    <th>Email id </th>
+                    <th></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+    </body>
+</html>
